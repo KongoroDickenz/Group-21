@@ -1,0 +1,41 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="ELBA.Page5"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Purple">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="EMERGENCY LOCATION BASED APP" Style="{StaticResource PhoneTextNormalStyle}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <TextBlock HorizontalAlignment="Left" Margin="0,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="639" Width="446">
+            	<Run Text="        Emergency Based Location App is an app that helps a user to find location of the nearest hospital and with the aid of the shortest distance of that particular hospital and its capabilities in relation to the health services it provides ."/>
+            	<LineBreak/>
+            	<Run Text="        It also aims at saving lives  of the few individuals that uses it by helping then know nearby hospitals and probably where they can find health services if there be need."/>
+            	<LineBreak/>
+            	<Run/>
+            </TextBlock>
+        </Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="129,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="About ELBA" VerticalAlignment="Top" Width="188" Height="62" FontSize="30"/>
+    </Grid>
+
+</phone:PhoneApplicationPage>
